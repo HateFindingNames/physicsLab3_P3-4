@@ -127,21 +127,25 @@
             %
             Air:
 
-            \begin{equation}
-                F_{Ring,Air} = -m_{Ring} \cdot g
-            \end{equation}
+            \begin{align}
+                F_{Ring,Air}    &= (m_{Air} - m_{Ring}) \cdot g \nonumber \\
+                                &= (p_{Air} - p_{Al})V_{Ring} \cdot g \nonumber
+            \end{align}
 
             Water:
 
             \begin{align}
                 F_{Ring,H_2O}  &= \left( m_{H_2O} - m_{Ring}\right) \cdot g \nonumber \\
-                                &= \left(\rho_{H_2O} - \rho_{Al}\right)V_{Ring} \cdot g
+                                &= \left(p_{H_2O} - p_{Al}\right)V_{Ring} \cdot g
             \end{align}
+            where \(p_{H_2O}\) is the specific mass of water with \SI{10^3}{\frac{kg}{m^{3}}}, \(p_{Al}\) that of aluminum
+            with \(2.7 \cdot \SI{10^3}{\frac{g}{cm^{3}}}\) and the specific mass of air at \SI{20}{\celsius} and normal athmospheric
+            pressure with \(p_{Air} = \SI{1.2}{\frac{kg}{m^3}}\) \cite{Eichler.2016}.
             %
         \subsection{Deriving an Equation for the Bridge Voltage}\label{sec:A4 equation for full bridge circuit}% A4
         %
             \begin{equation}
-                U_{Br} = U_2 - U_4 = U_3 - U_1 \quad \text{with} \quad U_{Br} = 0 \text{for} \frac{R_1}{R_2} = \frac{R_3}{R_4}
+                U_{Br} = U_2 - U_4 = U_3 - U_1 \quad \text{with} \quad U_{Br} = 0 \qquad \text{for} \qquad \frac{R_1}{R_2} = \frac{R_3}{R_4}
             \end{equation}
             \begin{equation}
                 U_{Br} = U_2 - U_4 = U_0 \cdot \left(\frac{R_2}{R_1 + R_2} - \frac{R_4}{R_3 + R_4}\right)
