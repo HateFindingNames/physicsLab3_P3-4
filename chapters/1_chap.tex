@@ -19,27 +19,27 @@
         \subsection*{\textsc{Du Noüy}-Method to Measure the Surface Tension of a Liquid}
         %
             A method to measure the surface tension of a liquid by measuring the force withdrawing a submerged ring from that
-            liquid \cite{ring.method.DuNouy.1919}.
+            liquid \cite{DuNouy.1919.early.ring.method}.
         \subsection*{Other Ways to Measure the Surface Tension of a Liquid}
         %
             \textsc{Andreas-Hauser-Tucker} method or Pendant-drop method: the shape of a droplet is solely dependent of the
             gravitational force and the surface energy. Knowing other parameters of the liquid in question the surface tension
-            can be acquired by geometrically evaluating photographs of hanging droplets \cite{Andreas-Hauser-Tucker.surface.tension.pendant.drop.1938}.\par
+            can be acquired by geometrically evaluating photographs of hanging droplets \cite{Andreas-Hauser-Tucker.surface.tension.pendant.drop.1938}.\par\medskip
             %
             Capillary-tubes method: one opening of a tube of sufficiently small inner diameter is brought in contact with
             the specimen. The liquid will - to some extent - travel along the tube depending on the adhesive forces between
             the liquid and the tube wall, the gravitational force and the cohesive forces along the liquids surface i.e.
-            the surface tension.\par
+            the surface tension.\par\medskip
             %
             Parallel-plates method: similar to the capillary-tubes method, the surface tension can be determined by evaluating
-            the rise of the liquid between two parallel plates brought in contact with the liquid.\par
+            the rise of the liquid between two parallel plates brought in contact with the liquid.\par\medskip
             %
             Sessile drops and bubbles: in this method, the shape of a drop or bubble resting on a flat and horizontal surface
-            is examined.\par
+            is examined.\par\medskip
             %
             \textsc{Jaegers} method: a tube is vertically submerged in a liquid leaving the lower and upper end open. Now,
             if gas pressure is applied to the top of the liquid column inside the tube until a gas bubble escapes the lower
-            end the surface tension can be derived from the gas pressure at that moment.\par
+            end the surface tension can be derived from the gas pressure at that moment.\par\medskip
             %
             Oscillating drops and bubbles: much like a pendulum, a drop or bubble is displaced from its shape of equilibrium.
             Released and left alone, it will oscillate about the shape of equilibrium. Measuring the frequency the surface
@@ -62,7 +62,7 @@
     %
         \subsection{Force-Time-Curve}\label{sec:A1 force time curve}% A1
         %
-            In fig. 4 the force-time-diagram is subdivided into the following 8 parts:
+            According to \cref{fig:surface_tension_subdivisions} the force-time-diagram is subdivided into the following 8 parts:
             \begin{enumerate}
                 \item The ring is located above the interface. No force is caused.
                 \item The ring touches the interface, creating a small positive adhesive force between the ring and the surface.
@@ -73,22 +73,29 @@
                 \item The force reaches its maximum.
                 \item The force decreases a bit with the raising until the lamella collapses.
             \end{enumerate}
-            If the diagram is compared with that in fig. 14, some differences are noted. For example, there are small
+            \newpage
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=.6\textwidth]{referenzen/surface_tension_subdivisions.jpg}
+                \caption[Schematic sequence and curve of the \textsc{Du Noüy} method]{Schematic sequence and curve of the \textsc{Du Noüy} method \cite{Lauren.20210109.3waysMeasureSurfaceTension}.}
+                \label{fig:surface_tension_subdivisions}
+            \end{figure}
+            If the diagram is compared with that in \cref{fig:instructions_fig14}, some differences are noted. For example, there are small
             periodic vibrations that probably have to do with the fluctuation of the ring and other external influences.
             It is particularly noticeable that after penetrating the surface, the force does not rise again into the
             positive, but remains in the negative and only returns into the positive from step 6. Otherwise, from a
-            qualitative point of view, everything is similar to that in fig. 4, except that after the lamella has
+            qualitative point of view, everything is similar to that in \cref{fig:surface_tension_subdivisions}, except that after the lamella has
             collapsed, the force oscillates around the zero position.
             %
         \subsection{Surface Tension Formula}\label{sec:A2 derive eq.4}% A2
         %
-            The change of area $ \Delta A $ corresponds to the sum of inner and outer radius - $ r_i $ and $ r_o $ respectively - of
-            the ring multiplied by the change in height $ \Delta x $:
+            The change of area \(\Delta A\) corresponds to the sum of inner and outer radius - \(r_i\) and \(r_o\) respectively - of
+            the ring multiplied by the change in height \(\Delta x\):
             \begin{align}
                 \Delta A = 2\pi \cdot (r_i + r_o) \cdot \Delta x
                 \label{eq:change of area}
             \end{align}
-            Since the diameter $ D = 2\bar{r} $ of the ring is much bigger than the thickness $ t = r_o - r_i $, \cref{eq:change of area}
+            Since the diameter \(D = 2\bar{r}\) of the ring is much bigger than the thickness \(t = r_o - r_i\), \cref{eq:change of area}
             can be simplified to
             \begin{equation}
                 \begin{gathered}
@@ -98,13 +105,13 @@
                     \label{eq:area}
                 \end{gathered}
             \end{equation}
-            Considering, that the amount of energy $ \Delta E $ is a result of the assumed constant force $ F_0 $ multiplied
+            Considering, that the amount of energy \(\Delta E\) is a result of the assumed constant force \(F_0\) multiplied
             by the change in height, it ensues:
             \begin{align}
                 \Delta E = F_0 \cdot \Delta x
                 \label{eq:energy}
             \end{align}
-            Since the surface tension $ \sigma $ is defined as the energy required to increase the surface divided by the change in surface area
+            Since the surface tension \(\sigma\) is defined as the energy required to increase the surface divided by the change in surface area
             \begin{align}
                 \sigma = \frac{\Delta E}{\Delta A}
                 \label{eq:surface tension raw}
@@ -184,10 +191,10 @@
             The resolution \( n \) of an ADC as per specification implies an ideal, i.e. free-of-noise dc signal. The effective resolution —
             or ENOB (\textbf{E}ffective \textbf{N}umber \textbf{O}f \textbf{B}its) — can be calculated by \cref{eq:ENOB}
             \begin{equation}
-                ENOB = n - \log_2{\sigma}
+                ENOB = n - \log_2{\varsigma}
                 \label{eq:ENOB}
             \end{equation}
-            where \( \sigma_{RMS} \) is the RMS (\textbf{R}oot \textbf{M}ean \textbf{S}quare) or standard deviation of the signals noise.
+            where \( \varsigma_{RMS} \) is the RMS (\textbf{R}oot \textbf{M}ean \textbf{S}quare) or standard deviation of the signals noise.
             %
         \subsection{Step Response of an Exponential Filter}\label{sec:A8 step response expo filter}% A8
         %

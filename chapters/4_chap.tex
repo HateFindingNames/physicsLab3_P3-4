@@ -66,13 +66,13 @@
             \label{fig:adc_result}
         \end{figure}
         \begin{align*}
-            \bar{n}_{raw}       &=-21 \qquad \sigma_{raw}=58\\
-            \bar{n}_{filtered}  &=-23 \qquad \sigma_{filtered}=39
+            \bar{n}_{raw}       &=-21 \qquad \varsigma_{raw}=58\\
+            \bar{n}_{filtered}  &=-23 \qquad \varsigma_{filtered}=39
         \end{align*}
         Based on that, the deviation of the force to be read can be determined as
         \begin{align}
-            \Delta F    &=\left| \frac{\partial F}{\partial \bar{n}_{filtered}} \right| \cdot \sigma_{filtered} + \left| \frac{\partial F}{\partial c} \right| \cdot \Delta c \nonumber \\
-                        &=\frac{1}{c} \cdot \sigma_{filtered} + \frac{\left|\bar{n}_{filtered}\right|}{c^2} \cdot \Delta c \nonumber \\
+            \Delta F    &=\left| \frac{\partial F}{\partial \bar{n}_{filtered}} \right| \cdot \varsigma_{filtered} + \left| \frac{\partial F}{\partial c} \right| \cdot \Delta c \nonumber \\
+                        &=\frac{1}{c} \cdot \varsigma_{filtered} + \frac{\left|\bar{n}_{filtered}\right|}{c^2} \cdot \Delta c \nonumber \\
                         &=\frac{39}{\SI{2875}{\frac{1}{mN}}} + \frac{23 \cdot \SI{73}{\frac{1}{mN}}}{(\SI{2875}{\frac{1}{mN}})^2} \cdot \SI{73}{\frac{1}{mN}} \nonumber \\
                         &=\SI{0.0135}{mN}+\SI{0.0002}{mN} \nonumber \\
                         &=\SI{13.7}{\micro N}
