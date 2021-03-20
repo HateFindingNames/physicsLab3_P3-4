@@ -50,7 +50,7 @@
             \centering
             % \includegraphics[width=.9\textwidth]{scidavis/Du_Nouy_Method_Measurement_with_distilled_water_No_1_for_cal.jpg}
             \includesvg[inkscapelatex=false, width=.9\textwidth]{scidavis/Du_Nouy_Method_Measurement_with_distilled_water_No_1_for_cal}
-            \caption[]{}
+            \caption[Measurement with \textsc{Du Noüy} ring in distilled water (\(\vartheta \approx \SI{20}{\celsius}\))]{Measurement with \textsc{Du Noüy} ring in distilled water (\(\vartheta \approx \SI{20}{\celsius}\)).}
             \label{fig:du_nouy_method_measurement_with_distilled_water_no_1_for_calibration}
         \end{figure}
         %
@@ -62,7 +62,7 @@
             \centering
             % \includegraphics[width=.9\textwidth]{scidavis/ADC_result.jpg}
             \includesvg[inkscapelatex=false, width=.9\textwidth]{scidavis/ADC_result}
-            \caption[]{}
+            \caption[Stray diagram with no load applied to force sensor]{Stray diagram with no load applied to force sensor.}
             \label{fig:adc_result}
         \end{figure}
         \begin{align*}
@@ -82,21 +82,22 @@
             ENOB&=-23-\log_2(39)=-28
         \end{align*}
         Further, the histograms (\cref{fig:histogram_raw_data} and \cref{fig:histogram_filtered_data}) show that the raw
-        data is more widely spread than the filtered one. The raw data histogram has a binning value of around 40 and the
-        filtered data one of around 20.
-        \begin{figure}[H]
-            \centering
-            % \includegraphics[width=.9\textwidth]{scidavis/histogram_filtered_data.jpg}
-            \includesvg[inkscapelatex=false, width=.9\textwidth]{scidavis/histogram_filtered_data}
-            \caption[]{}
-            \label{fig:histogram_filtered_data}
-        \end{figure}
-        \begin{figure}[H]
+        data is more widely spread than the filtered one. The raw data histogram has a binning value of \(\approx 40\) while the
+        filtered datas binning value is \(\approx 20\).\par\medskip
+        \begin{figure}[h]
             \centering
             % \includegraphics[width=.9\textwidth]{scidavis/histogram_raw_data.jpg}
             \includesvg[inkscapelatex=false, width=.9\textwidth]{scidavis/histogram_raw_data}
-            \caption[]{}
+            \caption[Histogram of raw data]{Histogram of raw data.}
             \label{fig:histogram_raw_data}
+        \end{figure}
+        
+        \begin{figure}[h]
+            \centering
+            % \includegraphics[width=.9\textwidth]{scidavis/histogram_filtered_data.jpg}
+            \includesvg[inkscapelatex=false, width=.9\textwidth]{scidavis/histogram_filtered_data}
+            \caption[Histogram of filtered data]{Histogram of filtered data.}
+            \label{fig:histogram_filtered_data}
         \end{figure}
         %
     \section{\textsc{Du Noüy} Ring Method Measurement}
@@ -119,7 +120,7 @@
             \end{align*}
             with a deviation
             \begin{align}
-                \Delta \sigma_{H_2O}^{det}  &= \left| \frac{\partial \sigma_{H_2O,determined}}{\partial \bar{F}_{max,H_2O}} \right| \cdot \Delta F + \left| \frac{\partial \sigma_{H_2O,determined}}{\partial R} \right| \cdot \Delta R \nonumber \\
+                \Delta \sigma_{H_2O}^{det}  &= \left| \frac{\partial \sigma_{H_2O}^{det}}{\partial \bar{F}_{max,H_2O}} \right| \cdot \Delta F + \left| \frac{\partial \sigma_{H_2O}^{det}}{\partial R} \right| \cdot \Delta R \nonumber \\
                                             &= \frac{\Delta F}{4\pi \cdot R_{ring}} + \frac{\bar{F}_{max}^{H2O}\cdot \Delta R_{ring}}{4\pi \cdot R_{ring}^2} \nonumber \\
                                             &= \frac{\SI{0.01}{mN}}{4\pi \cdot \SI{0.03}{m}} + \frac{\SI{27.5}{mN}}{4\pi \cdot (\SI{0.03}{m})^2} \cdot \SI{0.00005}{m} \nonumber \\
                                             &= \SI{0.0265}{\frac{mN}{m}} + \SI{0.122}{\frac{mN}{m}} \nonumber \\
