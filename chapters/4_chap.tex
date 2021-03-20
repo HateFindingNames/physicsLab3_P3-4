@@ -1,11 +1,15 @@
 \chapter{Evaluation}
     %
     \section{Calibration of the Force Sensor}
-        Because of a measurement misfortune for the calibration, the common way for determining the calibration factor is inoperable. Therefore another method is improvised. Originally, the calibration factor $ c $ was supposed to be determined by the linear fit of the ADC result-force-curve, while the weight of the different masses would have been converted into forces:
+        Because of a measurement misfortune for the calibration, the common way for determining the calibration factor is
+        inoperable. Therefore, another method is improvised. Originally, the calibration factor \(c\) was supposed to be
+        determined by computing the slope of the correlation between the ADC values and the pulling force on the strain gauge.
+        Thus, the weight of the different masses would have been converted into forces by
         \begin{align}
             c=\frac{\Delta n}{\Delta F} &&\left[\frac{1}{\SI{}{mN}}\right]
         \end{align}
-        Since this measurement failed, the literature value of the surface tension of distilled water has to be used in order to be able to carry out a backward calculation. For that, \cref{eq:surface tension} is transformed into the force $ F_0 $:
+        Since this measurement failed, the literature value of the surface tension of distilled water was used in
+        order to be able to carry out a backward calculation. For that, \cref{eq:surface tension} is transformed into the force \(F_0\):
         \begin{align*}
             F_0=\sigma \cdot 4\pi \cdot \bar{r}
         \end{align*}
